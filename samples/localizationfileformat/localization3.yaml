@@ -1,0 +1,27 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.Apples
+    Cases:
+    - Text: "You've got no apples."
+      Plurals: "0:cardinal:zero" 
+    - Text: "You've got an apple."
+      Plurals: "0:cardinal:one"
+    - Text: "You've got {0} apples."
+      Plurals: "0:cardinal:other"
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: Namespace.Apples
+    Cases:
+    - Text: "Sinulla ei ole omenoita."
+      Plurals: "0:cardinal:zero" 
+    - Text: "Sinulla on yksi omena."
+      Plurals: "0:cardinal:one"
+    - Text: "Sinulla on {0} omenaa."
+      Plurals: "0:cardinal:other"

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>CS1591;CS1573</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Pages\IndexModel.yaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\IndexModel.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>https://avalanche.fi/Avalanche.Core/nupkg/index.json</RestoreAdditionalProjectSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Avalanche.Localization.Asp\Avalanche.Localization.Asp.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Cldr\Avalanche.Localization.Cldr.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Extensions\Avalanche.Localization.Extensions.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Resources\sv\samples.asp.Pages.IndexModel.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿TemplateFormat: Brace
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: samples.Resources.Namespace.Apples.Count
+    Cases:
+    - Text: "You've got an apple."
+      Plurals: "0:cardinal:one"
+    - Text: "You've got {0} apples."
+      Plurals: "0:cardinal:other" 
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: samples.Resources.Namespace.Apples.Count
+    Cases:
+    - Text: "Sinulla on yksi omena."
+      Plurals: "0:cardinal:one"
+    - Text: "Sinulla on {0} omenaa."
+      Plurals: "0:cardinal:other"
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: samples.Resources.Namespace.ErrorExample
+    Text: "This line has an template error {0."

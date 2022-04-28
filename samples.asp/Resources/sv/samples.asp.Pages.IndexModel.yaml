@@ -1,0 +1,12 @@
+﻿TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+Swedish:
+- Culture: "sv"
+  Items:
+  - Key: samples.asp.Pages.IndexModel.Home
+    Text: "Hemsida"
+  - Key: samples.asp.Pages.IndexModel.Welcome
+    Text: "Välkommen"
+  - Key: samples.asp.Pages.IndexModel.Content
+    Text: Läs om <a href="http://avalanche.fi/Avalanche.Core/Avalanche.Localization/docs/aspnetcore/index.html">Avalanche.Localization</a>.

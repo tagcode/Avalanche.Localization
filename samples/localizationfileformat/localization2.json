@@ -1,0 +1,22 @@
+{
+  "TemplateFormat": "BraceNumeric",
+  "PluralRules": "Unicode.CLDR41",
+  "English": {
+    "Culture": "en",
+    "Items": [
+      {
+        "Key": "Namespace.Apples",
+        "Items": [
+          {
+            "Text": "You've got an apple.",
+            "Plurals": "0:cardinal:one"
+          },
+          {
+            "Text": "You've got {0} apples.",
+            "Plurals": "0:cardinal:other"
+          }
+        ]
+      }
+    ]
+  }
+}

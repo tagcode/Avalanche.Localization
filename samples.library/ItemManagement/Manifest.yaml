@@ -1,0 +1,22 @@
+﻿TemplateFormat: Brace
+PluralRules: Unicode.CLDR41
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: samples.library.ItemManagement.Manifest.Header
+    Text: "Identity | Count    "
+  - Key: samples.library.ItemManagement.Manifest.Spacer
+    Text: "--------------------"
+  - Key: samples.library.ItemManagement.Manifest.Line
+    Text: "{Identity,8} | {Count,9}"
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: samples.library.ItemManagement.Manifest.Header
+    Text: "Nimike   | Lukumäärä"
+  - Key: samples.library.ItemManagement.Manifest.Spacer
+    Text: "--------------------"
+  - Key: samples.library.ItemManagement.Manifest.Line
+    Text: "{Identity,8} | {Count,9}"

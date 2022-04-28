@@ -1,0 +1,15 @@
+﻿TemplateFormat: Detect
+
+Items:
+- Key: Namespace.HelloCasual
+  Items:
+  - Text: "Hello fella"
+    Culture: en
+  - Text: "Hello mate"
+    Culture: en-AU
+  - Text: "Hello chap"
+    Culture: en-UK
+  - Text: "Hello dude"
+    Culture: en-US
+  - Text: "Hello buddy"
+    Culture: en-CA

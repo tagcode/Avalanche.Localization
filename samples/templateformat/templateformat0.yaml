@@ -1,0 +1,8 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.CatsDogs
+    Text: "{0} cats and {1} dogs"

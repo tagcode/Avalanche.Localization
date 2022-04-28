@@ -1,0 +1,10 @@
+﻿# Error case: Text malformed
+TemplateFormat: BraceAlphaNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.CatsDogs
+    Text: "{cats} cats and {dogs dogs"
+#      Malformed text here ^^^^^

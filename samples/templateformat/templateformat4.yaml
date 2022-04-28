@@ -1,0 +1,9 @@
+﻿# Configuration
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.Welcome
+    TemplateFormat: Parameterless
+    Text: "Welcome."

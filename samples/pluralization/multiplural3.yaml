@@ -1,0 +1,9 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.CatsDogs
+    Text: "{0} cat(s) and {1} dog(s)"

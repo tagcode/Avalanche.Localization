@@ -1,0 +1,18 @@
+﻿# Configuration
+TemplateFormat: Percent
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.CatsDogs
+    Cases: 
+    - Text: "a cat and a dog"
+      Plurals: "1:cardinal:one,2:cardinal:one"
+    - Text: "%1 cats and a dog"
+      Plurals: "1:cardinal:other,2:cardinal:one"
+
+    - Text: "a cat and %2 dogs"
+      Plurals: "1:cardinal:one,2:cardinal:other"
+    - Text: "%1 cats and %2 dogs"
+      Plurals: "1:cardinal:other,2:cardinal:other"

@@ -1,0 +1,26 @@
+﻿TemplateFormat: Brace
+PluralRules: Unicode.CLDR41
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: Namespace.Apples
+    Cases:
+    - Text: "You've got an apple."
+      Plurals: "0:cardinal:one:en"
+    - Text: "You've got {0} apples."
+      Plurals: "0:cardinal:other:en" 
+  - Key: Namespace.Today
+    Text: "Today is {0}."
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: Namespace.Apples
+    Cases:
+    - Text: "Sinulla on yksi omena."
+      Plurals: "0:cardinal:one"
+    - Text: "Sinulla on {0} omenaa."
+      Plurals: "0:cardinal:other"
+  - Key: Namespace.Today
+    Text: "Tänään on {0}."

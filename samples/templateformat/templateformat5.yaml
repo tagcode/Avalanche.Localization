@@ -1,0 +1,10 @@
+﻿# Configuration
+PluralRules: Unicode.CLDR41
+TemplateFormat: Detect
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.Apples
+    Text: "You've got {0} apple(s)."
+    Plurals: "0:cardinal:other" 

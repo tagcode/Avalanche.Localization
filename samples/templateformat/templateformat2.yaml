@@ -1,0 +1,18 @@
+﻿# Configuration
+TemplateFormat: BraceAlphaNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.CatsDogs
+    Cases: 
+    - Text: "a cat and a dog"
+      Plurals: "cats:cardinal:one,dogs:cardinal:one"
+    - Text: "{cats} cats and a dog"
+      Plurals: "cats:cardinal:other,dogs:cardinal:one"
+
+    - Text: "a cat and {dogs} dogs"
+      Plurals: "cats:cardinal:one,dogs:cardinal:other"
+    - Text: "{cats} cats and {dogs} dogs"
+      Plurals: "cats:cardinal:other,dogs:cardinal:other"

@@ -1,0 +1,10 @@
+﻿TemplateFormat: Brace
+PluralRules: Unicode.CLDR41
+
+Items:
+- Key: System.Collections.Generic.IList<System.String>
+  Text: "List of strings"
+  Culture: en
+- Key: System.Collections.Generic.IList<System.String>
+  Text: "Lista merkkijonoja"
+  Culture: fi

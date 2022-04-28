@@ -1,0 +1,8 @@
+﻿TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: Example.ErrorExample
+    Text: "This line has an template error {0."

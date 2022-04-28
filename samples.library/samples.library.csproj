@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>CS1591;CS1573</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ItemManagement\Manifest.yaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ItemManagement\Manifest.yaml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>https://avalanche.fi/Avalanche.Core/nupkg/index.json</RestoreAdditionalProjectSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Avalanche.Localization.Cldr\Avalanche.Localization.Cldr.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
+  </ItemGroup>
+</Project>

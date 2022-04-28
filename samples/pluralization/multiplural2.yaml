@@ -1,0 +1,27 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.CatsDogs
+    Cases: 
+    - Text: "no cats and no dogs"
+      Plurals: "0:cardinal:zero,1:cardinal:zero"
+    - Text: "a cat but no dogs"
+      Plurals: "0:cardinal:one,1:cardinal:zero"
+    - Text: "{0} cats but no dogs"
+      Plurals: "0:cardinal:other,1:cardinal:zero"
+    - Text: "no cats but a dog"
+      Plurals: "0:cardinal:zero,1:cardinal:one"
+    - Text: "a cat and a dog"
+      Plurals: "0:cardinal:one,1:cardinal:one"
+    - Text: "{0} cats and a dog"
+      Plurals: "0:cardinal:other,1:cardinal:one"
+    - Text: "no cats but {1} dogs"
+      Plurals: "0:cardinal:zero,1:cardinal:other"
+    - Text: "a cat and {1} dogs"
+      Plurals: "0:cardinal:one,1:cardinal:other"
+    - Text: "{0} cats and {1} dogs"
+      Plurals: "0:cardinal:other,1:cardinal:other"

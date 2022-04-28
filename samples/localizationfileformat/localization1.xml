@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization TemplateFormat="BraceNumeric" PluralRules="Unicode.CLDR41">
+    <Node Culture="en">
+        <Text Key="Namespace.Apples">You've got {0} apple(s).</Text>
+        <Text Key="Namespace.ExitRoundabout">Take {0}th exit.</Text>
+    </Node>
+    <Node Culture="fi">
+        <Text Key="Namespace.Apples">Sinulla on {0} omena(a).</Text>
+        <Text Key="Namespace.ExitRoundabout">Poistu {0}. erkanemiskaistalta.</Text>
+    </Node>
+</Localization>

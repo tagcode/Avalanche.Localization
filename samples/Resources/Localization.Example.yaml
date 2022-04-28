@@ -1,0 +1,7 @@
+﻿TemplateFormat: Brace
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: Localization.Example.HelloWorld
+    Text: "Hello World"

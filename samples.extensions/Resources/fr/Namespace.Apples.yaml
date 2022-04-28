@@ -1,0 +1,16 @@
+﻿TemplateFormat: Brace
+PluralRules: Unicode.CLDR41
+
+French:
+- Culture: fr
+  Items:
+  - Key: Namespace.Apples.Count
+    Cases:
+    - Text: "Tu n'as pas de pommes."
+      Plurals: "0:cardinal:zero"
+    - Text: "Vous avez une pomme."
+      Plurals: "0:cardinal:one"
+    - Text: "Vous avez {0} de pommes."
+      Plurals: "0:cardinal:many"
+    - Text: "Vous avez {0} pommes."
+      Plurals: "0:cardinal:other"

@@ -1,0 +1,19 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.Apples
+    Text: "You've got {0} apple(s)."
+  - Key: Namespace.ExitRoundabout
+    Text: "Take exit number {0}."
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: Namespace.Apples
+    Text: "Sinulla on {0} omena(a)."
+  - Key: Namespace.ExitRoundabout
+    Text: "Poistu {0}. erkanemiskaistalta."

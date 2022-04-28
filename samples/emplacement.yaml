@@ -1,0 +1,46 @@
+﻿TemplateFormat: BraceAlphaNumeric
+PluralRules: Unicode.CLDR41
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: samples.emplacement.and
+    Text: "{0} and {1}"
+  - Key: samples.emplacement.cat
+    Cases:
+    - Text: "no cats"
+      Plurals: "count:cardinal:zero:en"
+    - Text: "a cat"
+      Plurals: "count:cardinal:one:en"
+    - Text: "{count} cats"
+      Plurals: "count:cardinal:other:en" 
+  - Key: samples.emplacement.dog
+    Cases:
+    - Text: "no dogs"
+      Plurals: "count:cardinal:zero:en"
+    - Text: "a dog"
+      Plurals: "count:cardinal:one:en"
+    - Text: "{count} dogs"
+      Plurals: "count:cardinal:other:en" 
+  - Key: samples.emplacement.pony
+    Text: "a pony"
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: samples.emplacement.and
+    Text: "{0} ja {1}"
+  - Key: samples.emplacement.cat
+    Cases:
+    - Text: "kissa"
+      Plurals: "count:cardinal:one"
+    - Text: "{count} kissaa"
+      Plurals: "count:cardinal:other" 
+  - Key: samples.emplacement.dog
+    Cases:
+    - Text: "koira"
+      Plurals: "count:cardinal:one"
+    - Text: "{count} koiraa"
+      Plurals: "count:cardinal:other" 
+  - Key: samples.emplacement.pony
+    Text: "poni"

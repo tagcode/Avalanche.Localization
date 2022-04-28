@@ -1,0 +1,30 @@
+{
+  "TemplateFormat": "BraceNumeric",
+  "PluralRules": "Unicode.CLDR41",
+  "English": {
+    "Culture": "en",
+    "Items": [
+      {
+        "Key": "Namespace.ExitRoundabout",
+        "Items": [
+          {
+            "Text": "Take first exit.",
+            "Plurals": "0:ordinal:one"
+          },
+          {
+            "Text": "Take second exit.",
+            "Plurals": "0:ordinal:two"
+          },
+          {
+            "Text": "Take third exit.",
+            "Plurals": "0:ordinal:few"
+          },
+          {
+            "Text": "Take {0}th exit.",
+            "Plurals": "0:ordinal:other"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+﻿@page
+@using Avalanche.Localization
+@using Microsoft.AspNetCore.Localization
+@using System.Globalization
+@inject ITextLocalizer<IndexModel> Localizer
+@model IndexModel
+
+@{
+    ViewData["Title"] = Localizer["Home"];
+    IRequestCultureFeature requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>()!;
+    RequestCulture requestCulture = requestCultureFeature.RequestCulture;
+    CultureInfo format = (CultureInfo)Localizer.CultureProvider.Format;
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Localizer["Welcome"]</h1>
+    <p>@Localizer["Content"].LocalizeHtml()</p>
+
+    <table class="table">
+        <tr><td>IRequestCultureFeature.UICulture</td><td>@requestCulture.UICulture.Name</td></tr>
+        <tr><td>IRequestCultureFeature.Culture</td><td>@requestCulture.Culture.DisplayName {@requestCulture.Culture.Name}</td></tr>
+        <tr><td>CultureProvider.Culture</td><td>@Localizer.CultureProvider.Culture</td></tr>
+        <tr><td>CultureProvider.Format</td><td>@format.DisplayName {@format.Name}</td></tr>
+        <tr><td>Long Date</td><td>@DateTime.Now.ToLongDateString()</td></tr>
+        <tr><td>Short Date</td><td>@DateTime.Now.ToShortDateString()</td></tr>
+        <tr><td>Currency</td><td>@(12345.67.ToString("c"))</td></tr>
+        <tr><td>Number</td><td>@(12345.67m.ToString("F2"))</td></tr>
+    </table>
+</div>

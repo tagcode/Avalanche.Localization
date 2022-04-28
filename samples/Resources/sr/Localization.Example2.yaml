@@ -1,0 +1,10 @@
+﻿TemplateFormat: Brace
+
+Serbian:
+- Culture: sr
+  Items:
+  - Key: Localization.Example.HelloWorld
+    Items:
+    - Text: "Здраво Свете"
+    - Text: "Zdravo Svete"
+      Culture: sr-Latn

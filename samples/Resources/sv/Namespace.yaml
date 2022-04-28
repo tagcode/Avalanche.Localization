@@ -1,0 +1,14 @@
+﻿TemplateFormat: Brace
+PluralRules: Unicode.CLDR41
+
+Swedish:
+- Culture: sv
+  Items:
+  - Key: Namespace.Apples
+    Cases:
+    - Text: "Du har ett äpple."
+      Plurals: "0:cardinal:one"
+    - Text: "Du har {0} äpplen."
+      Plurals: "0:cardinal:other"
+  - Key: Namespace.Today
+    Text: "Idag är det {0}."

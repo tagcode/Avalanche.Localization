@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization TemplateFormat="BraceNumeric" PluralRules="Unicode.CLDR41">
+    <Node Culture="en">
+        <Node Key="Namespace.ExitRoundabout">
+            <Text>Take {0}th exit.</Text>
+            <Text Plurals="0:ordinal:one">Take first exit.</Text>
+            <Text Plurals="0:ordinal:two">Take second exit.</Text>
+            <Text Plurals="0:ordinal:few">Take third exit.</Text>
+        </Node>        
+    </Node>
+    <Node Culture="fi">
+        <Text Key="Namespace.ExitRoundabout">Poistu {0}. erkanemiskaistalta.</Text>
+    </Node>
+</Localization>

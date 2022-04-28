@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>samples</RootNamespace>
+    <NoWarn>CS1591;CS1573</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\Example.yaml" />
+    <None Remove="Resources\fr\Namespace.Apples.yaml" />
+    <None Remove="Resources\Namespace.Apples.yaml" />
+    <None Remove="Resources\sv\Namespace.Apples.yaml" />
+    <None Remove="Resources\System.Collections.Generic.yaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Example.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\fr\Namespace.Apples.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Namespace.Apples.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\sv\Namespace.Apples.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\System.Collections.Generic.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="6.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <RestoreAdditionalProjectSources>https://avalanche.fi/Avalanche.Core/nupkg/index.json</RestoreAdditionalProjectSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Cldr\Avalanche.Localization.Cldr.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Extensions\Avalanche.Localization.Extensions.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Extensions\Avalanche.Localization.Extensions.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
+    <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
+    <PackageReference Include="Avalanche.Message.Localization" Version="0.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\Resource1.Designer.cs">
+      <DependentUpon>Resource1.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource1.resx">
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="filelocalizer\fi\Namespace.Apples.logo.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="filelocalizer\Namespace.Apples.logo.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\fi\image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\logo.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\samples.Resources.Namespace.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\sv\Image.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\sv\samples.Resources.Namespace.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

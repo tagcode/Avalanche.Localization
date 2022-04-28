@@ -1,0 +1,49 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: en
+  Items:
+  - Key: Namespace.ExitRoundabout
+    # Override earlier "PluralRules" where first four ordinals have explicit cases: one, two, three, four, other
+    PluralRules: > 
+      [Category=ordinal,Culture=en,Case=one,Required=True] n % 10=1 and n % 100!=11
+      [Category=ordinal,Culture=en,Case=two,Required=True] n % 10=2 and n % 100!=12	
+      [Category=ordinal,Culture=en,Case=three,Required=True] n % 10=3 and n % 100!=13
+      [Category=ordinal,Culture=en,Case=four,Required=True] n % 10=4 and n % 100!=14
+      [Category=ordinal,Culture=en,Case=other,Required=True]
+    Cases: 
+    - Text: "Take first exit."
+      Plurals: "0:ordinal:one"
+    - Text: "Take second exit."
+      Plurals: "0:ordinal:two"
+    - Text: "Take third exit."
+      Plurals: "0:ordinal:three"
+    - Text: "Take fourth exit."
+      Plurals: "0:ordinal:four"
+    - Text: "Take {0}th exit."
+      Plurals: "0:ordinal:other"
+
+Finnish:
+- Culture: fi
+  Items:
+  - Key: Namespace.ExitRoundabout
+    # Override earlier "PluralRules" where first four ordinals have explicit cases: one, two, three, four, other
+    PluralRules: > 
+      [Category=ordinal,Culture=fi,Case=one,Required=True] n = 1
+      [Category=ordinal,Culture=fi,Case=two,Required=True] n = 2
+      [Category=ordinal,Culture=fi,Case=three,Required=True] n = 3
+      [Category=ordinal,Culture=fi,Case=four,Required=True] n = 4
+      [Category=ordinal,Culture=fi,Case=other,Required=True]
+    Cases: 
+    - Text: "Poistu ensimmäisestä erkanemiskaistasta."
+      Plurals: "0:ordinal:one"
+    - Text: "Poistu toisesta erkanemiskaistasta."
+      Plurals: "0:ordinal:two"
+    - Text: "Poistu kolmannesta erkanemiskaistasta."
+      Plurals: "0:ordinal:three"
+    - Text: "Poistu neljännestä erkanemiskaistasta."
+      Plurals: "0:ordinal:four"
+    - Text: "Poistu {0}. erkanemiskaistasta."
+      Plurals: "0:ordinal:other"

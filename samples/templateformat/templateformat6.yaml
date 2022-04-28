@@ -1,0 +1,9 @@
+﻿# Configuration
+PluralRules: Unicode.CLDR41
+TemplateFormat: Dash
+
+InvariantCulture:
+- Culture: ""
+  Items:
+  - Key: Namespace.Apples
+    Text: "You've got #0# apple(s)."

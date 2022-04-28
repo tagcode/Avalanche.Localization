@@ -1,0 +1,22 @@
+﻿TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+English:
+- Culture: "en"
+  Items:
+  - Key: samples.asp.Pages.IndexModel.Home
+    Text: "Home page"
+  - Key: samples.asp.Pages.IndexModel.Welcome
+    Text: "Welcome"
+  - Key: samples.asp.Pages.IndexModel.Content
+    Text: Learn about <a href="http://avalanche.fi/Avalanche.Core/Avalanche.Localization/docs/aspnetcore/index.html">Avalanche.Localization</a>.
+
+Finnish:
+- Culture: "fi"
+  Items:
+  - Key: samples.asp.Pages.IndexModel.Home
+    Text: "Kotisivu"
+  - Key: samples.asp.Pages.IndexModel.Welcome
+    Text: "Tervetuloa"
+  - Key: samples.asp.Pages.IndexModel.Content
+    Text: Lue lisää <a href="http://avalanche.fi/Avalanche.Core/Avalanche.Localization/docs/aspnetcore/index.html">Avalanche.Localization:sta</a>.

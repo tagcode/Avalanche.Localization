@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization TemplateFormat="BraceNumeric" PluralRules="Unicode.CLDR41">
+    <Node Culture="en">
+        <Text Key="Namespace.Apples"><![CDATA[You've got {0} apple(s).]]></Text>
+        <Text Key="Namespace.ExitRoundabout"><![CDATA[Take {0}th exit.]]></Text>
+    </Node>
+</Localization>

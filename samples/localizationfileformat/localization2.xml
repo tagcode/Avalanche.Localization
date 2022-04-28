@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization TemplateFormat="BraceNumeric" PluralRules="Unicode.CLDR41">
+    <Node Culture="en">
+        <Node Key="Namespace.Apples">
+            <Text Plurals="0:cardinal:one">You've got an apple.</Text>
+            <Text Plurals="0:cardinal:other">You've got {0} apples.</Text>
+        </Node>
+    </Node>
+    <Node Culture="fi">
+        <Node Key="Namespace.Apples">
+            <Text Plurals="0:cardinal:one">Sinulla on yksi omena.</Text>
+            <Text Plurals="0:cardinal:other">Sinulla on {0} omenaa.</Text>
+        </Node>
+    </Node>
+</Localization>

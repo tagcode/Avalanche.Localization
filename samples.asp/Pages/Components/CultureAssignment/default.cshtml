@@ -1,0 +1,11 @@
+﻿@using System.Globalization
+@model samples.asp.Models.CultureAssignmentModel
+
+<form id="culture-assignment">
+    <select name="culture" onchange="this.parentElement.submit();">
+        @foreach (CultureInfo culture in Model.SupportedCultures)
+        {
+            <option value="@culture.Name" selected="@(Model!.CurrentUICulture.Name == culture.Name)">@culture.DisplayName</option>
+        }
+    </select>
+</form>

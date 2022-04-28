@@ -1,0 +1,23 @@
+﻿# Configuration
+TemplateFormat: Detect
+
+InvariantCulture:
+- Culture: ""
+  Items:
+  - Key: Namespace.Apples
+    # Custom "PluralRules"
+    PluralRules: > 
+      [Category=cardinal,Culture=,Case=zero,Required=False] n = 0
+      [Category=cardinal,Culture=,Case=one,Required=True] i=1 and v=0
+      [Category=cardinal,Culture=,Case=other,Required=True]
+      [Category=ordinal,Culture=,Case=one,Required=True] n % 10=1 and n % 100!=11
+      [Category=ordinal,Culture=,Case=two,Required=True] n % 10=2 and n % 100!=12	
+      [Category=ordinal,Culture=,Case=few,Required=True] n % 10=3 and n % 100!=13
+      [Category=ordinal,Culture=,Case=other,Required=True]
+    Cases: 
+    - Text: "You've got {0} apples."
+      Plurals: "0:cardinal:other"
+    - Text: "You've got an apple."
+      Plurals: "0:cardinal:one"
+    - Text: "You've got no apples."
+      Plurals: "0:cardinal:zero" 

@@ -1,0 +1,18 @@
+﻿# Configuration
+TemplateFormat: BraceNumeric
+PluralRules: Unicode.CLDR41
+
+Invariant:
+- Culture: ""
+  Items:
+  - Key: Namespace.ExitRoundabout
+    Cases: 
+    - Text: "Take first exit."
+      Plurals: "0:ordinal:one:en"
+    - Text: "Take second exit."
+      Plurals: "0:ordinal:two:en"
+    - Text: "Take third exit."
+      Plurals: "0:ordinal:few:en"
+    - Text: "Take {0}th exit."
+      Plurals: "0:ordinal:other:en"
+
