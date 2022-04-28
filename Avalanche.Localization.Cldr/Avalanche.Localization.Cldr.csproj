@@ -31,8 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
-    <PackageReference Include="Avalanche.Tokenizer" Version="0.1.1" />
-    <PackageReference Include="Avalanche.Utilities" Version="0.1.1" />
+    <PackageReference Include="Avalanche.Tokenizer" Version="0.1.2" />
+    <PackageReference Include="Avalanche.Utilities" Version="0.1.2" />
   </ItemGroup>
   <ItemGroup>
     <None Update="README.md">

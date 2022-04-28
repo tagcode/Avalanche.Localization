@@ -32,8 +32,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
     <PackageReference Include="YamlDotNet" Version="11.2.1" />
-    <PackageReference Include="Avalanche.Template" Version="0.1.1" />
-    <PackageReference Include="Avalanche.Utilities" Version="0.1.1" />
+    <PackageReference Include="Avalanche.Template" Version="0.1.2" />
+    <PackageReference Include="Avalanche.Utilities" Version="0.1.2" />
   </ItemGroup>
   <ItemGroup>
     <None Update="README.md">

@@ -57,7 +57,7 @@
     <ProjectReference Include="..\Avalanche.Localization.Extensions\Avalanche.Localization.Extensions.csproj" />
     <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
     <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
-    <PackageReference Include="Avalanche.Message.Localization" Version="0.1.1" />
+    <PackageReference Include="Avalanche.Message.Localization" Version="0.1.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Resource1.Designer.cs">

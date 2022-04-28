@@ -6,7 +6,7 @@
     <Authors>Toni Kalajainen</Authors>
     <Company>Avalanche Information Technology Oy</Company>
     <Copyright>Toni Kalajainen</Copyright>
-    <Version>2.2.0.1</Version>
+    <Version>2.2.0.2</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Avalanche.Localization</RootNamespace>
     <Title>Avalanche.Localization.Asp</Title>
