@@ -84,7 +84,7 @@ WriteLine(text.Print(culture, arguments)); // "Du har 2 äpplen."
 <b>Localization.Default.LocalizingTextCached</b> provides localizing texts that localize and pluralize to the active culture.
 
 ```csharp
-// Get active culture provider (CurrentThread)
+// Get active culture provider
 ICultureProvider cultureProvider = CultureProvider.CurrentCulture.Instance;
 // Get localizing text
 ILocalizedText text = Localization.Default.LocalizingTextCached[(cultureProvider, "Namespace.Apples")];

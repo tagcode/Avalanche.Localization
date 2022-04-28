@@ -20,7 +20,6 @@ templateformat.Run();
 localization_index.Run();
 customrules.Run();
 cultureprovider.Run();
-localizationerror.Run();
 xml.Run();
 json.Run();
 localizationfileformat.Run();

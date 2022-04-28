@@ -25,4 +25,4 @@ Invariant:
 - Culture: ""
   Items:
   - Key: samples.Resources.Namespace.ErrorExample
-    Text: "This line has an template error {0."
+    Text: "This line has a template error {0."

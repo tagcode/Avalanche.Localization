@@ -30,4 +30,21 @@ public static class CultureProviderExtensions
         format = cultureProvider.Format;
         return format != null;
     }
+
+    /// <summary>Language only</summary>
+    public static string Language(this ICultureProvider cultureProvider)
+    {
+        // Get culture
+        string? culture = cultureProvider?.Culture;
+        // No culture
+        if (string.IsNullOrEmpty(culture)) return culture!;
+        // Find '-' region separator
+        int ix = culture.IndexOf('-');
+        // No region separator
+        if (ix < 0) return culture;
+        // Separate language
+        string language = culture.Substring(0, ix);
+        // Return
+        return language;
+    }
 }

@@ -26,7 +26,7 @@ public record LocalizationLinesInfo : ReadOnlyAssignableRecord, ILocalizationLin
 
     /// <summary></summary>
     protected string key = null!;
-    /// <summary></summary>
+    /// <summary>Culture with language and possibly region</summary>
     protected string culture = null!;
     /// <summary>Default template text, one where every pluralized parameter is "other" or with no pluralized assignments.</summary>
     protected ITemplateText @default = null!;
@@ -52,7 +52,7 @@ public record LocalizationLinesInfo : ReadOnlyAssignableRecord, ILocalizationLin
 
     /// <summary></summary>
     public string Key { get => key; set => this.AssertWritable().key = value; }
-    /// <summary></summary>
+    /// <summary>Culture with language and possibly region</summary>
     public string Culture { get => culture; set => this.AssertWritable().culture = value; }
     /// <summary></summary>
     public IFormatProvider Format { get => null!; set { } }

@@ -200,7 +200,7 @@ public class LocalizationLinesInfoProvider : ProviderBase<IEnumerable<IEnumerabl
                         // Already has culture
                         if (pluralAssignment.culture != null) continue;
                         // Replace
-                        plurals.Assignments[i] = pluralAssignment.WithCulture(lineInfo.Culture);
+                        plurals.Assignments[i] = pluralAssignment.WithCulture(lineInfo.Language());
                     }
 
                     // Add plural assignments
@@ -264,7 +264,7 @@ public class LocalizationLinesInfoProvider : ProviderBase<IEnumerable<IEnumerabl
 
                     parameterAnalysis.Key = lineInfo.Key!;
                     parameterAnalysis.KeyText = lineInfo.KeyText;
-                    parameterAnalysis.Culture = lineInfo.Culture!;
+                    parameterAnalysis.Culture = lineInfo.Language();
                     //parameterAnalysis.PluralRuleProvider = this.PluralRuleProvider;
                     parameterAnalysis.PluralsTexts = lineInfo.PluralsTexts;
                     if (lineInfo.Default != null)
@@ -287,7 +287,7 @@ public class LocalizationLinesInfoProvider : ProviderBase<IEnumerable<IEnumerabl
                         // Get all rulesets
                         string[] rulesets = lineInfo.RuleSets();
                         // Create sorter
-                        PluralsSorter<(PluralAssignment[], ITemplateText)> sorter = new PluralsSorter<(PluralAssignment[], ITemplateText)>(rulesets.Length==0?null:rulesets[0], lineInfo.Culture, this.PluralRuleProvider, i => i.Item1);
+                        PluralsSorter<(PluralAssignment[], ITemplateText)> sorter = new PluralsSorter<(PluralAssignment[], ITemplateText)>(rulesets.Length==0?null:rulesets[0], lineInfo.Language(), this.PluralRuleProvider, i => i.Item1);
                         // Sort array
                         Array.Sort(((PluralAssignment[], ITemplateText)[])lineInfo.Plurals, sorter);
                     }
@@ -342,7 +342,7 @@ public class LocalizationLinesInfoProvider : ProviderBase<IEnumerable<IEnumerabl
                             // Could not find evaluator
                             else
                             {
-                                HandleError(lineInfo, false, lineInfo.Key, lineInfo.Culture, LocalizationMessageIds.PluralRulesNotFound, $"Plural rules not found [{info}]", info.ToString());
+                                HandleError(lineInfo, false, lineInfo.Key, lineInfo.Language(), LocalizationMessageIds.PluralRulesNotFound, $"Plural rules not found [{info}]", info.ToString());
                             }
                         }
                         // Assign evaluators

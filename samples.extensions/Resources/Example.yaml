@@ -5,4 +5,4 @@ Invariant:
 - Culture: ""
   Items:
   - Key: Example.ErrorExample
-    Text: "This line has an template error {0."
+    Text: "This line has a template error {0."

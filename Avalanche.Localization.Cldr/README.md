@@ -1,5 +1,5 @@
 ﻿<b>Avalanche.Localization.Cldr</b> contains pluralization implementations that are derived from data files of Unicode CLDR, 
-[[git]](https://github.com/tagcode/Avalanche.Localization/Avalanche.Localization.Cldr), 
+[[git]](https://github.com/tagcode/Avalanche.Localization/tree/main/Avalanche.Localization.Cldr), 
 [[www]](https://avalanche.fi/Avalanche.Core/Avalanche.Localization/docs/pluralization/cldrs.html), 
 [[licensing]](https://avalanche.fi/Avalanche.Core/license/index.html).
 
