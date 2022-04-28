@@ -5,8 +5,12 @@
 
 <b>Localization in short.</b> Add package reference to .csproj.
 ```xml
+<PropertyGroup>
+    <RestoreAdditionalProjectSources>https://avalanche.fi/Avalanche.Core/nupkg/index.json</RestoreAdditionalProjectSources>
+</PropertyGroup>
 <ItemGroup>
     <PackageReference Include="Avalanche.Localization"/>
+    <PackageReference Include="Avalanche.Localization.Cldr"/>
 </ItemGroup>
 ```
 
