@@ -58,14 +58,12 @@
     <RestoreAdditionalProjectSources>https://avalanche.fi/Avalanche.Core/nupkg/index.json</RestoreAdditionalProjectSources>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
     <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
     <ProjectReference Include="..\Avalanche.Localization.Cldr\Avalanche.Localization.Cldr.csproj" />
     <ProjectReference Include="..\Avalanche.Localization.Extensions\Avalanche.Localization.Extensions.csproj" />
     <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
-    <ProjectReference Include="..\Avalanche.Localization.Extensions\Avalanche.Localization.Extensions.csproj" />
-    <ProjectReference Include="..\Avalanche.Localization.Abstractions\Avalanche.Localization.Abstractions.csproj" />
-    <ProjectReference Include="..\Avalanche.Localization\Avalanche.Localization.csproj" />
-    <PackageReference Include="Avalanche.Message.Localization" Version="0.1.2" />
+    <PackageReference Include="Avalanche.Message.Localization" Version="0.1.3" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Resource1.Designer.cs">

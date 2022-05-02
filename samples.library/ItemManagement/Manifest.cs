@@ -34,7 +34,7 @@ public class Manifest : List<Manifest.Item>
         return sb.ToString();
     }
 
-    /// <summary>Print items in manifest. Uses current thread's UI culture.</summary>
+    /// <summary>Print items in manifest. Uses current UI culture.</summary>
     public override string ToString() => ToString(CultureInfo.CurrentUICulture);
 
     /// <summary>Test run for debugging.</summary>
