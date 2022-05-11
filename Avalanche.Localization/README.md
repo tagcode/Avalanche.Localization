@@ -87,7 +87,7 @@ WriteLine(text.Print(culture, arguments)); // "Du har 2 äpplen."
 // Get active culture provider
 ICultureProvider cultureProvider = CultureProvider.CurrentCulture.Instance;
 // Get localizing text
-ILocalizedText text = Localization.Default.LocalizingTextCached[(cultureProvider, "Namespace.Apples")];
+ILocalizingText text = Localization.Default.LocalizingTextCached[(cultureProvider, "Namespace.Apples")];
 // Assign language
 CultureInfo.CurrentUICulture = CultureInfo.GetCultureInfo("sv");
 // Assign format provider
