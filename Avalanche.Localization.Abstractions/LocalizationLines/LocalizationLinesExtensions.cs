@@ -85,5 +85,51 @@ public static class LocalizationLinesExtensions
         return line;
     }
 
+    /// <summary>Try get key-value</summary>
+    public static bool TryGet(this IEnumerable<KeyValuePair<string, MarkedText>> line, string key, out string value)
+    {
+        // Visit key-values
+        foreach(var keyvalue in line)
+        {
+            // Not match
+            if (keyvalue.Key != key) continue;
+            // Get value
+            value = keyvalue.Value.AsString;
+            return true;
+        }
+        value = null!;
+        return false;
+    }
+
+    /// <summary>Try get possible value</summary>
+    public static string? GetPossible(this IEnumerable<KeyValuePair<string, MarkedText>> line, string key)
+    {
+        // Visit key-values
+        foreach(var keyvalue in line)
+        {
+            // Not match
+            if (keyvalue.Key != key) continue;
+            // Get value
+            return keyvalue.Value.HasValue ? keyvalue.Value.AsString : null;
+        }
+        // No value
+        return null;
+    }
+
+    /// <summary>Try get possible <see cref="MarkedText"/></summary>
+    public static MarkedText Get(this IEnumerable<KeyValuePair<string, MarkedText>> line, string key)
+    {
+        // Visit key-values
+        foreach(var keyvalue in line)
+        {
+            // Not match
+            if (keyvalue.Key != key) continue;
+            // Get value
+            return keyvalue.Value.HasValue ? keyvalue.Value.AsString : default!;
+        }
+        // No value
+        return default!;
+    }
+
 }
 
